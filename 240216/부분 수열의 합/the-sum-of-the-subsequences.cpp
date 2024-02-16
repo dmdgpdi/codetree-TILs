@@ -24,7 +24,8 @@ int main() {
     for(int i=0; i<n; i++){
         for(int j=m; 0<j; j--){
             if(0 <= j-num[i] && dp[j-num[i]] != 0){
-                dp[j] += dp[j-num[i]];
+                dp[j] = 1;
+                // cout << num[i] << " 일 때: " << j << " 에 값 넣음 => " << dp[j] << " \n";
             }
         }
     }
